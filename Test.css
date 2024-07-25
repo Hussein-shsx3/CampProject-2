@@ -1,0 +1,408 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: nunito;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  top: 0px;
+  width: 85%;
+  height: 110px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  z-index: 5;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 125px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(118, 117, 117);
+  margin: 0px 15px;
+}
+
+nav a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: rgb(154, 79, 208);
+  display: block;
+  transition: 0.2s linear;
+}
+
+nav a:hover::after {
+  width: 80%;
+}
+
+.active,
+nav a:hover {
+  color: rgb(154, 79, 208);
+}
+
+.active::after {
+  width: 80%;
+}
+
+header button {
+  width: 115px;
+  height: 34px;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  transition: all 0.2s;
+}
+
+header button:hover {
+  background-color: rgb(154, 79, 208);
+  color: white;
+}
+
+/* Home */
+
+.HomeC {
+  position: relative;
+  width: 100%;
+  height: 110vh;
+  background-image: url('./images/blue_bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home {
+  position: relative;
+  width: 80%;
+  height: 110vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Home-1 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  transform: translateY(-30px);
+}
+
+.Home-1 h1 {
+  font-size: 46px;
+  margin-bottom: 17px;
+}
+
+.Home-1 h1 span {
+  color: rgb(154, 79, 208);
+}
+
+.Home-1 p {
+  font-size: 17px;
+  color: rgb(118, 117, 117);
+}
+
+.waves {
+  position: absolute;
+  width: 75%;
+  bottom: 0px;
+  left: 0px;
+}
+
+.deliver {
+  width: 24%;
+  margin-right: 10%;
+  transform: translateY(-50px);
+}
+
+.clouds {
+  position: absolute;
+  width: 30%;
+  right: 7%;
+  top: 65%;
+}
+
+.landing_bg {
+  position: absolute;
+  width: 45%;
+  top: 4%;
+  right: 3%;
+  z-index: -1;
+}
+
+/* Services */
+
+.ServicesC {
+  width: 100%;
+  padding: 100px 0px;
+  margin-top: -80px;
+  margin-bottom: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.Services {
+  position: relative;
+  width: 80%;
+  padding: 100px 0px;
+  display: flex;
+  justify-content: center;
+  background-image: url('./images/second_section_.png');
+  background-position: center;
+  background-size: 850px;
+  background-repeat: no-repeat;
+}
+
+.imageS1,
+.imageS2,
+.imageS3 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.imageS1 {
+  transform: translate(-40px, -30px);
+}
+
+.imageS2 {
+  transform: translateY(100px);
+}
+
+.imageS3 {
+  transform: translateY(300px);
+}
+
+.Services img {
+  width: 55%;
+}
+
+.Services h3 {
+  font-size: 21px;
+  letter-spacing: 1px;
+  color: rgb(97, 97, 97);
+  margin: 10px 0px;
+}
+
+.Services p {
+  font-size: 17px;
+  color: rgb(97, 97, 97);
+}
+
+.Why {
+  position: absolute;
+  left: 4%;
+  bottom: -250px;
+  width: 30%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Why img {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.Why h4 {
+  color: white;
+  width: 35%;
+  margin-top: -15px;
+  font-weight: 500;
+}
+
+.Why h2 {
+  color: white;
+  width: 35%;
+  font-size: 35px;
+}
+
+/* About */
+
+.AboutC {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.About {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.CenterImg {
+  position: relative;
+  width: 38%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.CenterImg img {
+  width: 100%;
+}
+
+.CenterImg h3 {
+  font-size: 21px;
+  letter-spacing: 1px;
+  color: rgb(97, 97, 97);
+  margin-bottom: 10px;
+}
+
+.CenterImg p {
+  font-size: 17px;
+  width: 50%;
+  color: rgb(97, 97, 97);
+}
+
+.CenterImg .span-1 {
+  position: absolute;
+  top: 60%;
+  right: 0px;
+  font-size: 25px;
+  font-weight: 600;
+  color: gray;
+}
+
+.CenterImg .span-2 {
+  position: absolute;
+  top: 60%;
+  left: 0px;
+  font-size: 25px;
+  font-weight: 600;
+  color: gray;
+}
+
+footer {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  margin-top: -140px;
+  background-image: url('./images/Group 1131.png');
+  background-position: top;
+  background-size: 1800px;
+  background-repeat: no-repeat;
+}
+
+.footerC {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+
+footer img {
+  width: 50%;
+  margin-left: 5%;
+}
+
+.SocialM {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.SocialM nav a {
+  color: white;
+}
+
+.SocialMImg {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin: 15px 0px;
+}
+
+.SocialMImg img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.SocialMImg .facebook {
+  width: 15px;
+}
+
+
+
+.Store {
+  width: 340px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin: 10px 0px;
+}
+
+.StoreImg {
+  width: 130px;
+  margin-right: 10px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.StoreImg h4 {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.StoreImg img {
+  width: 25px;
+}
+
+@media(min-width:1670px) {
+  footer {
+    background-size: 2300px;
+  }
+
+  .SocialM {
+    padding: 50px 0px;
+  }
